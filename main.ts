@@ -48,16 +48,16 @@ basic.forever(function () {
     } else if (value == 68) {
         MiniCar.motor(Motorlist.M1, Direction1.Forward, 70)
         MiniCar.motor(Motorlist.M2, Direction1.Forward, 130)
-        MiniCar.led_rgb(LED_rgb_L_R.LED_R, LED_color.black)
-        MiniCar.led_rgb(LED_rgb_L_R.LED_L, LED_color.white)
+        MiniCar.led_rgb(LED_rgb_L_R.LED_R, LED_color.white)
+        MiniCar.led_rgb(LED_rgb_L_R.LED_L, LED_color.black)
     } else if (value == 67) {
         MiniCar.motor(Motorlist.M1, Direction1.Forward, 130)
         MiniCar.motor(Motorlist.M2, Direction1.Forward, 70)
-        MiniCar.led_rgb(LED_rgb_L_R.LED_L, LED_color.black)
-        MiniCar.led_rgb(LED_rgb_L_R.LED_R, LED_color.white)
+        MiniCar.led_rgb(LED_rgb_L_R.LED_L, LED_color.white)
+        MiniCar.led_rgb(LED_rgb_L_R.LED_R, LED_color.black)
     } else if (value == 21) {
-        MiniCar.motor(Motorlist.M1, Direction1.Forward, snelheid + 5)
-        MiniCar.motor(Motorlist.M2, Direction1.Forward, snelheid)
+        MiniCar.motor(Motorlist.M1, Direction1.Backward, snelheid + 5)
+        MiniCar.motor(Motorlist.M2, Direction1.Backward, snelheid)
         MiniCar.led_rgb(LED_rgb_L_R.LED_R, LED_color.red1)
         MiniCar.led_rgb(LED_rgb_L_R.LED_L, LED_color.red1)
     } else if (value == 64) {
